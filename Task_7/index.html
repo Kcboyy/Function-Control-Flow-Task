@@ -7,7 +7,20 @@
   </head>
   <body>
     <script>
-
+      let temperature = 55;
+      let doTheyOwnAHat = true;
+      
+      if (temperature <= 0) {
+        console.log('stay inside.');
+      // } else if (temperature <= 30) {
+      //   console.log(`wear a coat${doTheyOwnAHat ? ' and a hat' : ''}.`);
+      } else if (temperature <= 30 && doTheyOwnAHat) {
+        console.log(`wear a coat and a hat.`);
+      } else if (temperature <= 50) {
+        console.log('wear a coat.');
+      } else {
+        console.log('just pants and vest is fine.');
+      }
     </script>
   </body>
 </html>
